@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Lựa Chọn và Phản Hồi</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Lựa Chọn</h1>
+
+    <!-- Phần thêm lựa chọn của chủ trang web -->
+    <div id="adminSection">
+      <h2>Thêm Lựa Chọn</h2>
+      <input type="text" id="newChoice" placeholder="Nhập lựa chọn mới">
+      <button onclick="addChoice()">Thêm Lựa Chọn</button>
+    </div>
+
+    <!-- Phần hiển thị các lựa chọn -->
+    <div id="choicesSection">
+      <h2>Các Lựa Chọn</h2>
+      <ul id="choicesList"></ul>
+    </div>
+
+    <!-- Phần người dùng gửi phản hồi -->
+    <div id="feedbackSection">
+      <h2>Gửi Phản Hồi</h2>
+      <textarea id="feedback" rows="4" placeholder="Nhập phản hồi của bạn..."></textarea>
+      <button onclick="submitFeedback()">Gửi Phản Hồi</button>
+    </div>
+
+    <!-- Phần hiển thị phản hồi -->
+    <div id="feedbackListSection">
+      <h2>Phản Hồi</h2>
+      <ul id="feedbackList"></ul>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
